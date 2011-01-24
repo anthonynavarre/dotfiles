@@ -1,0 +1,13 @@
+# DIRECTORIES
+alias apps='cd /Applications'
+alias desktop='cd ~/Desktop'
+alias docs='cd ~/Documents'
+alias work='cd ~/work'
+
+# MISC
+alias ls='ls -G'
+alias ll='ls -lAh'
+alias lls='ls -lAhS'
+alias reload='source ~/.bash_profile'
+alias ..='cd ..'
+

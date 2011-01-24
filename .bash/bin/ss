@@ -1,0 +1,16 @@
+#!/bin/bash
+
+src=$1
+
+if [[$src = google]]; then
+  open "http://www.google.com/search?hl=en&q=$2"
+elif [[$src = jquery]]; then
+  open "http://api.jquery.com/?s=$2"
+elif [[$src = rails]]; then
+  open "http://apidock.com/rails/search?query=$2"
+elif [[$src = ruby]]; then
+  open "http://apidock.com/ruby/search?query=$2"
+elif [[$src = rspec]]; then
+  open "http://apidock.com/rspec/search?query=$2"
+fi
+
