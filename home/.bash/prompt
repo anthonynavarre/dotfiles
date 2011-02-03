@@ -1,2 +1,9 @@
 
-export PS1="\W/ $:"
+export GIT_PS1_SHOWDIRTYSTATE=true
+export GIT_PS1_SHOWSTASHSTATE=true
+export GIT_PS1_SHOW_UNTRACKEDFILES=true
+
+source ~/bin/git-completion.bash
+
+export PS1='\W $(__git_ps1 ${COLOR_RED}"(%s)"${COLOR_NC}): '
+
