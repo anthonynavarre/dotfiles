@@ -1,0 +1,11 @@
+function show_desktop {
+  defaults write com.apple.finder CreateDesktop -bool true && killall Finder
+}
+
+function hide_desktop {
+  defaults write com.apple.finder CreateDesktop -bool false && killall Finder
+}
+
+function show_full_filepath {
+  defaults write com.apple.finder _FXShowPosixPathInTitle -bool true && killall Finder
+}
