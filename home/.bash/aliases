@@ -16,3 +16,5 @@ alias ..='cd ..'
 alias g='git status'
 alias gco='git checkout $1'
 
+# Ruby + Rails
+alias be='bundle exec $1'
