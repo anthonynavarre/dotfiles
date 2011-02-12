@@ -19,3 +19,7 @@ alias ssh-add-git='ssh-add ~/.ssh/id_rsa_github'
 
 # Ruby + Rails
 alias be='bundle exec $1'
+
+# gems
+alias gemi='gem install $1 --no-rdoc --no-ri'
+
