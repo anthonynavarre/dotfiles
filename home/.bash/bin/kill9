@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Find a process id by name and kill it with fire
+# Usage: kill9 evergreen
+ps aux | grep $* | awk '{ print $2; }' | xargs kill -9
+

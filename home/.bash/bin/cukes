@@ -1,0 +1,25 @@
+#!/bin/bash
+
+file="./`expr "$1" : '\(.*\):.*'`"
+line=`expr "$1" : '.*:\(.*\)'`
+
+echo -e "${COLOR_GREEN}"
+if [ -f $file ]; then
+  echo -e "cuking file ${file}:${line}"
+else
+  echo -e "cuking file $1"
+  file="$1"
+fi
+echo -e "${COLOR_NC}"
+
+if [ -f $file ]; then
+  if [ $line ]; then
+    bundle exec cucumber -r features "$file:$line"
+  else
+    bundle exec cucumber -r features "$file"
+  fi
+elif [ -d $file ]; then
+  bundle exec cucumber -r features "$file"
+else
+  bundle exec cucumber
+fi
