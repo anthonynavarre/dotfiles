@@ -4,6 +4,7 @@ alias desktop='cd ~/Desktop'
 alias docs='cd ~/Documents'
 alias work='cd ~/work'
 alias katas='cd ~/Katas'
+alias dotfiles='cd ~/.homesick/repos/anthonynavarre/dotfiles/home'
 
 # MISC
 alias ls='ls -G'
