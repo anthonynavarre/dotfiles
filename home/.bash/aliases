@@ -25,3 +25,5 @@ alias rdbm='rake db:migrate db:test:prepare'
 # gems
 alias gemi='gem install $1 --no-rdoc --no-ri'
 
+# apps
+gitx='open . -a Gitx'
